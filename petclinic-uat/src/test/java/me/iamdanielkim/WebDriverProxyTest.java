@@ -1,16 +1,21 @@
 package me.iamdanielkim;
 
-import static org.junit.Assert.assertEquals;
-
-import java.net.URL;
-
+import com.saucelabs.common.SauceOnDemandAuthentication;
+import com.saucelabs.common.SauceOnDemandSessionIdProvider;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TestName;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+
+import java.net.URL;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Simple {@link RemoteWebDriver} test that demonstrates how to run your
@@ -19,9 +24,10 @@ import org.openqa.selenium.remote.RemoteWebDriver;
  * 
  * @author Ross Rowe
  */
-public class WebDriverTest {
+@Ignore
+public class WebDriverProxyTest {
 
-	private static final String SAUCELAB_URL = "http://iamdanielkim:3b12cec0-0058-42d5-a79d-d56a834e8d22@ondemand.saucelabs.com:80/wd/hub";
+	private static final String SAUCE_PROXY_URL = "http://iamdanielkim:3b12cec0-0058-42d5-a79d-d56a834e8d22@localhost:4445/wd/hub";
 	private WebDriver driver;
 
 	@Before
@@ -30,15 +36,14 @@ public class WebDriverTest {
 		DesiredCapabilities capabilities = DesiredCapabilities.firefox();
 		capabilities.setCapability("version", "17");
 		capabilities.setCapability("platform", Platform.XP);
-		this.driver = new RemoteWebDriver(new URL(SAUCELAB_URL),
-				capabilities);
+		this.driver = new RemoteWebDriver(new URL(SAUCE_PROXY_URL), capabilities);
 	}
 
 	@Test
-	public void webDriver() throws Exception {
-		driver.get("http://www.amazon.com/");
-		assertEquals(
-				"Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more",
+	@Ignore
+	public void goPetClinic() throws Exception {
+		driver.get("http://127.0.0.1:8081/petclinic/");
+		assertEquals("PetClinic :: a Spring Framework demonstration",
 				driver.getTitle());
 	}
 
