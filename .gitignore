@@ -4,3 +4,12 @@ target/*
 .project
 
 /target
+petclinic-uat/.settings/org.eclipse.core.resources.prefs
+petclinic/.settings/.jsdtscope
+petclinic/.settings/org.eclipse.core.resources.prefs
+petclinic/.settings/org.eclipse.jdt.core.prefs
+petclinic/.settings/org.eclipse.m2e.core.prefs
+petclinic/.settings/org.eclipse.wst.common.component
+petclinic/.settings/org.eclipse.wst.common.project.facet.core.xml
+petclinic/.settings/org.eclipse.wst.jsdt.ui.superType.container
+petclinic/.settings/org.eclipse.wst.jsdt.ui.superType.name
