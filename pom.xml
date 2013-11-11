@@ -72,5 +72,10 @@
 
 	</properties>
 
+	<scm>
+		<connection>scm:git:ssh://git@bitbucket.org:iamdanielkim/petclinic.git</connection>
+		<developerConnection>scm:git:ssh://git@bitbucket.org:iamdanielkim/petclinic.git</developerConnection>
+		<url>https://bitbucket.org/iamdanielkim/petclinic</url>
+	</scm>
 
 </project>
