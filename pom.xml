@@ -79,11 +79,11 @@
 				<version>2.4.1</version>
 				<configuration>
 				 	<!-- for release:prepare
-				 		 - <preparationGoals/> : clean verify (default)
-				 		 - <tagNameFormat/> : @{project.artifactId}-@{project.version} (default) 
+				 		 - <preparationGoals /> : clean verify (default)
+				 		 - <tagNameFormat /> : @{project.artifactId}-@{project.version} (default) 
 				 		 
-				 		 for release:perform - <goals/> : deploy (default)	
-				 		 for release:branch - <branchName/>
+				 		 for release:perform - <goals /> : deploy (default)	
+				 		 for release:branch - <branchName />
 				 	-->
 					<preparationGoals>clean package</preparationGoals>
 					<tagNameFormat>REL-@{project.artifactId}-@{project.version}</tagNameFormat>
@@ -99,7 +99,7 @@
 		<connection>scm:git:git@bitbucket.org:iamdanielkim/petclinic.git</connection>
 		<developerConnection>scm:git:git@bitbucket.org:iamdanielkim/petclinic.git</developerConnection>
 		<url>https://bitbucket.org/iamdanielkim/petclinic</url>
-	  <tag>REL-petclinic-project-0.9.0</tag>
+	  <tag>RB-@{project.artifactId}-@{project.version}</tag>
   </scm>
 
 </project>
