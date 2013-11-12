@@ -78,15 +78,16 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.4.1</version>
 				<configuration>
-				 	<!-- For release:prepare
-				 		 - preparationGoals(default): clean verify
-				 		 - tagNameFormat(default): @{project.artifactId}-@{project.version} 
+				 	<!-- for release:prepare
+				 		 - <preparationGoals/> : clean verify (default)
+				 		 - <tagNameFormat/> : @{project.artifactId}-@{project.version} (default) 
 				 		 
-				 		 For release:perform
-				 		 - goals(default): deploy	
+				 		 for release:perform - <goals/> : deploy (default)	
+				 		 for release:branch - <branchName/>
 				 	-->
 					<preparationGoals>clean package</preparationGoals>
 					<tagNameFormat>REL-@{project.artifactId}-@{project.version}</tagNameFormat>
+					<branchName>RB-@{project.artifactId}-@{project.version}</branchName>
 					<goals>install</goals>  
 					<arguments>-DskipTests</arguments>
 				</configuration>
