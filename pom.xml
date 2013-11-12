@@ -79,9 +79,17 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.4.1</version>
 				<configuration>
+				 	<!-- For release:prepare
+				 		 - preparationGoals(default): clean verify
+				 		 - tagNameFormat(default): @{project.artifactId}-@{project.version} 
+				 		 
+				 		 For release:perform
+				 		 - goals(default): deploy	
+				 	-->
 					<preparationGoals>clean package</preparationGoals>
-					<arguments>-DskipTests</arguments>
 					<tagNameFormat>REL-@{project.artifactId}-@{project.version}</tagNameFormat>
+					<goals>install</goals>  
+					<arguments>-DskipTests</arguments>
 				</configuration>
 			</plugin>
 		</plugins>
