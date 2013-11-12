@@ -5,7 +5,7 @@
 	<artifactId>petclinic-project</artifactId>
 	<version>0.9.1-SNAPSHOT</version>
 
-	<name>petclinic</name>
+	<name>petclinic-project</name>
 	<packaging>pom</packaging>
 	<modules>
 		<module>petclinic</module>

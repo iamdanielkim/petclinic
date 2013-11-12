@@ -7,7 +7,7 @@
 		<version>0.9.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>petclinic</artifactId>
-	<name>petclinic-app</name>
+	<name>petclinic-web</name>
 	<packaging>war</packaging>
 
 	<dependencies>
