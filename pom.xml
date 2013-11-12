@@ -88,8 +88,8 @@
 	</build>
 	
 	<scm>
-		<connection>scm:git:ssh://git@bitbucket.org:iamdanielkim/petclinic.git</connection>
-		<developerConnection>scm:git:ssh://git@bitbucket.org:iamdanielkim/petclinic.git</developerConnection>
+		<connection>scm:git:git@bitbucket.org:iamdanielkim/petclinic.git</connection>
+		<developerConnection>scm:git:git@bitbucket.org:iamdanielkim/petclinic.git</developerConnection>
 		<url>https://bitbucket.org/iamdanielkim/petclinic</url>
 	</scm>
 
