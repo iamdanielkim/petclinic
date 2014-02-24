@@ -7,10 +7,6 @@
 
 	<name>petclinic-project</name>
 	<packaging>pom</packaging>
-	<modules>
-		<module>petclinic</module>
-		<module>petclinic-uat</module>
-	</modules>
 	<properties>
 
 		<!-- Generic properties -->
